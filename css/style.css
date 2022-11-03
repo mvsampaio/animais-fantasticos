@@ -1,5 +1,6 @@
-/* Reset */
 
+<<<<<<< Updated upstream
+=======
 body,
 h1,
 h2,
@@ -48,6 +49,10 @@ body {
   margin-bottom: 4rem;
 }
 
+html.textoMaior {
+  font-size: 150%;
+}
+
 /* Header */
 
 .menu {
@@ -65,7 +70,7 @@ body {
 
 .menu li a {
   display: block;
-  padding: 10px;
+  padding: 16px 10px;
   margin-right: 10px;
   color: #222222;
   font-family: "IBM Plex Mono", monospace;
@@ -114,6 +119,10 @@ body {
   height: 360px;
   overflow-y: scroll;
   grid-column: 2;
+}
+
+.animais-lista li {
+  cursor: pointer;
 }
 
 .animais-lista::-webkit-scrollbar {
@@ -236,3 +245,27 @@ body {
     margin-bottom: 0px;
   }
 }
+
+/* JS - Menu animais */
+
+.js .js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
+  animation: show 0.5s forwards;
+  /* forwards = a cada animacao, volta para o estado inicial */
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+>>>>>>> Stashed changes
