@@ -8,7 +8,7 @@ export default function initFuncionamento() {
   const horarioAtual = dataAgora.getHours();
   const semanaAberto = diasSemana.indexOf(diaAtual) !== -1;
 
-  let horarioAberto =
+  const horarioAberto =
     horarioAtual >= horarioSemana[0] && horarioAtual < horarioSemana[1];
 
   if (semanaAberto && horarioAberto) {
