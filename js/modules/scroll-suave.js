@@ -8,12 +8,13 @@ export default function initScrollSuave() {
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
 
-    //Forma alternativa do scroll suave
-    // const topo = section.offsetTop;
-    // window.scrollTo({
-    //   top: topo,
-    //   behavior: "smooth",
-    // });
+    /* Forma alternativa do scroll suave
+    const topo = section.offsetTop;
+    window.scrollTo({
+      top: topo,
+      behavior: "smooth",
+    });
+    */
 
     section.scrollIntoView({
       behavior: "smooth",
