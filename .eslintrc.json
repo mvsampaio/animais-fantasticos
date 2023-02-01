@@ -13,6 +13,10 @@
     "no-param-reassign": "off",
     "quotes": "off",
     "no-console": "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
+    "comma-dangle": "off",
+    "max-classes-per-file": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
